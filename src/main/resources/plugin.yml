@@ -1,0 +1,8 @@
+name: Guns
+version: '${project.version}'
+main: com.jack.guns.Main
+api-version: 1.16
+authors: [ Jack ]
+description: Guns Project
+commands:
+  guns:
