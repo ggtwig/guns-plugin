@@ -20,47 +20,47 @@ public class Guns implements CommandExecutor {
 
             ItemStack netheriteHoe = new ItemStack(Material.NETHERITE_HOE);
             ItemMeta netheriteHoeItemMeta = netheriteHoe.getItemMeta();
-            netheriteHoeItemMeta.setDisplayName(ChatColor.DARK_RED + "Panzerfaust");
+            netheriteHoeItemMeta.setDisplayName("§4Panzerfaust");
             netheriteHoe.setItemMeta(netheriteHoeItemMeta);
 
             ItemStack diamondHoe = new ItemStack(Material.DIAMOND_HOE);
             ItemMeta diamondHoeMeta = diamondHoe.getItemMeta();
-            diamondHoeMeta.setDisplayName(ChatColor.AQUA + "Barrett M82");
+            diamondHoeMeta.setDisplayName("§bBarrett M82");
             diamondHoe.setItemMeta(diamondHoeMeta);
 
             ItemStack ironHoe = new ItemStack(Material.IRON_HOE);
             ItemMeta ironHoeMeta = ironHoe.getItemMeta();
-            ironHoeMeta.setDisplayName(ChatColor.WHITE + "DP-64");
+            ironHoeMeta.setDisplayName("§fDP-64");
             ironHoe.setItemMeta(ironHoeMeta);
 
             ItemStack goldenHoe = new ItemStack(Material.GOLDEN_HOE);
             ItemMeta goldenHoeMeta = goldenHoe.getItemMeta();
-            goldenHoeMeta.setDisplayName(ChatColor.GOLD + "M16");
+            goldenHoeMeta.setDisplayName("§6M16");
             goldenHoe.setItemMeta(goldenHoeMeta);
 
             ItemStack stoneHoe = new ItemStack(Material.STONE_HOE);
             ItemMeta stoneHoeMeta = stoneHoe.getItemMeta();
-            stoneHoeMeta.setDisplayName(ChatColor.GRAY + "Desert Eagle");
+            stoneHoeMeta.setDisplayName("§7Desert Eagle");
             stoneHoe.setItemMeta(stoneHoeMeta);
 
             ItemStack woodenHoe = new ItemStack(Material.WOODEN_HOE);
             ItemMeta woodenHoeMeta = woodenHoe.getItemMeta();
-            woodenHoeMeta.setDisplayName(ChatColor.DARK_PURPLE + "Gloch 17");
+            woodenHoeMeta.setDisplayName("§5Gloch 17");
             woodenHoe.setItemMeta(woodenHoeMeta);
 
             ItemStack stick = new ItemStack(Material.STICK);
             ItemMeta stickMeta = stick.getItemMeta();
-            stickMeta.setDisplayName(ChatColor.LIGHT_PURPLE + "Staff");
+            stickMeta.setDisplayName("§dStaff");
             stick.setItemMeta(stickMeta);
 
             ItemStack magmaCream = new ItemStack(Material.MAGMA_CREAM);
             ItemMeta magmaCreamMeta = magmaCream.getItemMeta();
-            magmaCreamMeta.setDisplayName(ChatColor.GREEN + "Medkit");
+            magmaCreamMeta.setDisplayName("§aMedkit");
             magmaCream.setItemMeta(magmaCreamMeta);
 
             ItemStack blazeRod = new ItemStack(Material.BLAZE_ROD);
             ItemMeta blazeRodMeta = blazeRod.getItemMeta();
-            blazeRodMeta.setDisplayName(ChatColor.YELLOW + "Stim Shot");
+            blazeRodMeta.setDisplayName("§eStim Shot");
             blazeRod.setItemMeta(blazeRodMeta);
 
             player.getInventory().addItem(netheriteHoe, diamondHoe, ironHoe, goldenHoe, stoneHoe, woodenHoe, stick, magmaCream, blazeRod);

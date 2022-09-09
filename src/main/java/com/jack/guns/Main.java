@@ -1,7 +1,6 @@
 package com.jack.guns;
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
@@ -43,30 +42,30 @@ public final class Main extends JavaPlugin implements Listener {
         if (e.getHand().equals(EquipmentSlot.HAND)) {
             Player player = e.getPlayer();
             if (e.getAction().equals(Action.RIGHT_CLICK_AIR) || e.getAction().equals(Action.RIGHT_CLICK_BLOCK)) {
-                if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(ChatColor.DARK_RED + "Panzerfaust")) {
+                if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§4Panzerfaust")) {
                     player.launchProjectile(Fireball.class, player.getLocation().getDirection());
-                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(ChatColor.AQUA + "Barrett M82")) {
+                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§bBarrett M82")) {
                     player.launchProjectile(Trident.class, player.getLocation().getDirection());
-                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(ChatColor.WHITE + "DP-64")) {
+                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§fDP-64")) {
                     player.launchProjectile(Snowball.class, player.getLocation().getDirection());
-                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(ChatColor.GOLD + "M16")) {
+                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§6M16")) {
                     player.launchProjectile(SpectralArrow.class, player.getLocation().getDirection());
-                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(ChatColor.GRAY + "Desert Eagle")) {
+                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§7Desert Eagle")) {
                     player.launchProjectile(LlamaSpit.class, player.getLocation().getDirection());
-                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(ChatColor.DARK_PURPLE + "Gloch 17")) {
+                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§5Gloch 17")) {
                     player.launchProjectile(Egg.class, player.getLocation().getDirection());
-                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(ChatColor.LIGHT_PURPLE + "Staff")) {
+                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§dStaff")) {
                     player.launchProjectile(ShulkerBullet.class, player.getLocation().getDirection());
-                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(ChatColor.GREEN + "Medkit")) {
+                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§aMedkit")) {
                     // CREATING HEALTH POTION
                     ItemStack splashHealthPotion = new ItemStack(Material.SPLASH_POTION);
                     PotionMeta splashHealthPotionMeta = (PotionMeta) splashHealthPotion.getItemMeta();
-                    splashHealthPotionMeta.setBasePotionData(new PotionData(PotionType.INSTANT_HEAL, false, true));
+                    splashHealthPotionMeta.setBasePotionData(new PotionData(PotionType.INSTANT_HEAL, false, false));
                     splashHealthPotion.setItemMeta(splashHealthPotionMeta);
 
                     ThrownPotion healthPotion = player.launchProjectile(ThrownPotion.class, player.getLocation().getDirection());
                     healthPotion.setItem(splashHealthPotion);
-                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals(ChatColor.YELLOW + "Stim Shot")) {
+                } else if (player.getInventory().getItemInMainHand() != null && player.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equals("§eStim Shot")) {
                     // CREATING SPEED POTION
                     ItemStack splashSpeedPotion = new ItemStack(Material.SPLASH_POTION);
                     PotionMeta splashSpeedPotionMeta = (PotionMeta) splashSpeedPotion.getItemMeta();
